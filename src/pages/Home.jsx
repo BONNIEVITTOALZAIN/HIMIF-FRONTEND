@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import FlipWords from '../components/Ui/flip-words'
 const Home = () => {
   const [particles, setParticles] = useState([]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -98,11 +98,10 @@ const Home = () => {
                 <span className="block animate-text bg-gradient-to-r from-red-500 via-gray-800 to-red-500 bg-clip-text text-transparent bg-[length:200%_200%]">
                   Salam Informatika !!
                 </span>
-                <span className="block text-red-600 mt-2 drop-shadow-[0_0_15px_rgba(239,68,68,0.4)] animate-pulse text-3xl md:text-4xl xl:text-5xl">
-                  Muda, Kreatif, Berwawasan Global
-                </span>
+                <div></div>
+               <FlipWords  words={['Mudah','Kreatif','Berwawasan Global']} 
+               className="bg-gray-800 bg-clip-text"/>
               </h1>
-
               <p className="text-lg md:text-xl text-gray-700 mb-10 leading-relaxed">
                 Himpunan Mahasiswa Informatika Multidata Palembang — Wadah untuk mengembangkan
                 kreativitas, inovasi, dan potensi mahasiswa informatika
