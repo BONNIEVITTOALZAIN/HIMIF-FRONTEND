@@ -13,23 +13,27 @@ export default function Navbar() {
   const isAdmin = adminRoles.includes(user?.role);
   const [current, setCurrent] = useState(0);
 
+  //Route Navigasi
   const navigations = [
-    { name: "Home", to: "/" },
+    { name: "Home", 
+      to: "/" 
+    },
     {
       name: "About Me",
       to: "/AboutMe"
     },
     {
-      name: "Programs",
-      dropdown: [
-        { name: "Program Kerja", to: "/program/kerja" },
-        { name: "Kegiatan Rutin", to: "/program/rutin" },
-        { name: "Workshop", to: "/program/workshop" },
-        { name: "Seminar", to: "/program/seminar" },
-      ],
+      name: "Program",
+      to: "/Program"
     },
-    { name: "News", to: "/berita" },
-    { name: "Contact", to: "/kontak" },
+    {
+      name: "News",
+      to: "/News"
+    },
+    {
+      name: "Contact",
+      to: "/Contact"
+    },
   ];
 
   const imageLogo = [
