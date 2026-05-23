@@ -15,8 +15,8 @@ export function AuthProvider({ children }) {
     localStorage.getItem("token") || null
   );
 
-  const login = async (npm, password) => {
-    const res = await AuthService.login({ npm, password });
+  const login = async (email, password) => {
+    const res = await AuthService.login({ email, password });
     const data = res.data;
 
     if (data.user?.status === "nonaktif") {

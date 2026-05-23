@@ -26,7 +26,7 @@ const Program = () => {
             <Target className="w-5 h-5 text-red-500" />
             <span className="text-white font-medium text-sm tracking-wide">Kegiatan Kami</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-5xl font-black mb-6 tracking-tight">
             Program <span className="text-red-500 drop-shadow-[0_0_15px_rgba(220,38,38,0.5)]">Kerja</span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed">
